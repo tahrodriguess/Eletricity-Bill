@@ -8,23 +8,22 @@
             <link rel="stylesheet" href="style.css">
             <script src="app.js"></script>
 </head>
-<style></style>
-
 <body>
     <main>
         <div class ="top">
-            <h1 id="app-title">Eletric Bill Ireland</h1>     
+            <h1 id="app-title">Eletric Bill Ireland</h1>
+            <h3> Calculate your own eletricity</h3>     
         </div>
         <div id ="main">
             <form action="" id="eletricity-cal-form">
                 <div class="unit-section">
                     <label for ="unit-input" id="ulabel">Number of Units</label>
-                    <input type="number" step="any" min="0" name="ulabel" id="ulabel" placeholder="insert number" class="input-item text-right" required>            
+                    <input type="number" min="0" name="ulabel" id="unit-input" placeholder="insert number" class="input-item text-right" required>            
                 </div>
 
                 <div class="bp-section">
                     <label for="bp-input" id="bplabel">Billing Period</label>
-                    <input type="number" step="any" name="bplabel" id="bplabel" placeholder="insert number of days" class="input-item text-right" required>
+                    <input type="number" name="bplabel" id="bp-input" placeholder="insert number of days" class="input-item text-right" required>
                 </div> 
 
                 <div class="btn-section">
@@ -33,26 +32,10 @@
             </form>
 
             <div class="result-section">
-                <table id ="result">
-                    <tbody>
-                        <tr>
-                            <td class="">Subtotal:</td>
-                            <td class="text-left" id="subtotal"></td>
-                        </tr>
-                        <tr>
-                            <td class=""> VAT (13.5%)</td>
-                            <td class="text-left" id ="VAT"></td>
-                        </tr>
-                        <tr>
-                            <td class="">Total</td>
-                            <td class="text-left" id="Total"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p>Subtotal:<span id="dynamic_sub_cost">    </span></p>
+                <p>Subtotal:<span id="dynamic_sub_cost"></span></p>
                 <p> VAT (13.5%)</p>
                 <p>Total: <span id="dynamic_total_cost"></span></p>
+                <p class="cost_texts" id="cost_text"></p>
             </div>
         </div>
 
