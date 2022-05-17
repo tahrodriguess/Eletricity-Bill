@@ -7,8 +7,18 @@ body * {
     font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif, cursive;
     
 }
+
+.container {
+    margin-top: 5%;   
+    padding: 20px 200px 200px;
+    border-radius: 5px;
+    width: 50%;    
+    background-color: white;
+    box-shadow: 0px 5px 24px coral;       
+}
+
 main {
-    max-width: 500px;
+    max-width: 40%;
     margin: auto;
     padding: 10px;
     display: flex;
@@ -18,33 +28,27 @@ main {
     background-color: white;
 }
 
-.container {
-    border-radius: 5px;
-    background-color: aliceblue;
-    width: 100%;
-}
 /*head title*/
 #app-title {
-    text-align: left;    
+    position:static;  
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    padding: 5%;
+    margin-bottom: 0;    
 }
 
-#app-title p {
+
+#app-title p{
     size: 20px;
     text-align: left;
-    margin: auto;
+    margin: 0;
 }
 
 /*input*/
-#ulabel{
-    margin: auto;
-}
 
 #unit-input {
     position: bottom;
 }
+
 input.input-item {
     padding: 10px;
     border: 1px solid;
@@ -60,9 +64,13 @@ input.input-item {
 
 
 /*button*/
+.btn-section {
+    position: static;
+    margin: auto;
+}
 .btn-btn {
     background-color:coral;
-    font-weight: 700;
+    font-weight:700;
     padding: 12px 12px;
     border: none;
     border-radius: 4px;
@@ -70,14 +78,8 @@ input.input-item {
     width: 30%;
     border: unset;
 
-   }
-/*/
-#btn-calculate {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
 
-}*/
 .btn-btn:hover{
     background-color: chocolate;
 }
@@ -101,15 +103,18 @@ hr {
     font-size: 15px;
 }
 
-
 .total{
     font-weight: bold;
 }
+
 .student-info{
     font-size: 12px;
     color: gray;;
     position: absolute;
-    bottom: px;
-    left: 50px;
+    bottom: 90px;
+    left: 400px;
+    border-color: black;
+    border-radius: 2px;
 }
+
 
