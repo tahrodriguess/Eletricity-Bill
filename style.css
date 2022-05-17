@@ -30,7 +30,8 @@ main {
 
 /*head title*/
 #app-title {
-    position:static;  
+    
+     
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     margin-bottom: 0;    
@@ -38,6 +39,8 @@ main {
 
 
 #app-title p{
+    position: absolute;
+    bottom:50%;
     size: 20px;
     text-align: left;
     margin: 0;
