@@ -5,14 +5,15 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Eletric Bill Ireland</title>
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="style.css" >
             <script src="app.js"></script>
 </head>
 <body>
     <main>
+        <div class="container">
         <div class ="top">
             <h1 id="app-title">Eletric Bill Ireland</h1>
-            <h4> Calculate your own eletricity</h4>     
+            <p> Calculate your own eletricity</p>     
         </div>
         <div id ="main">
             <form action="" id="eletricity-cal-form">
@@ -27,26 +28,27 @@
                 </div> 
 
                 <div class="btn-section">
-                    <button class="btn btn-warning" id="btn-calculate" type="submit">Calculate</button>
+                    <button class="btn-btn" id="btn-calculate" type="submit">Calculate</button>
                 </div>
             </form>
                 
-                <hr style="width:50%;text-align:left;margin-left:0">
+                <hr style="width:100%;text-align:left;margin-left:0">
             
             <div class="result-section">
                 <p>Subtotal:<span id="dynamic_sub_cost"></span></p>
                 <p> VAT (13.5%)</p>
                     
-                    <hr style="width:10%">
+                    <hr style="width:50%;text-align:left;margin-left:0">
                 
-                <p>Total: <span id="dynamic_total_cost"></span></p>
+                 <p><strong>Total: <span id="dynamic_total_cost"></span></strong></p>
                 <p class="cost_texts" id="cost_text"></p>
             </div>
-            <div class="student-info"></div>
+            <div class="student-info">
             <p>Tamiris Rodrigues Duarte - 2020294</p>
             <p>Thiago de Oliveira da Costa - 2020005</p>
+			</div>
         </div>
-
+        </div>
     </main>
     
 </body>

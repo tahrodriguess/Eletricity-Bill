@@ -1,33 +1,34 @@
 // inputs
 
-const priceInput = document.getElementById('unit-input');
-const quantityIput = document.getElementById('bp-input');
-//const vatInput = document.getElementById('vat-input');
+const unitInput = document.getElementById('unit-input');
+const daysInput = document.getElementById('bp-input');
+
 
 // buttons
 
 const successButton = document.getElementById('btn-calculate');
-//const resetButton = document.getElementById('btn-reset');
 
 // Results
 
 const subCostInput = document.getElementById('dynamic_sub_cost');
 const finalCostInput = document.getElementById('dynamic_total_cost');
-const message = document.getElementById('cost_text')
+const message = document.getElementById('cost_text');
 
 function calculateTotalCost() {
 
-    let price, qty, vat, subTotal, total;
+    let unit, days, vat, subTotal, total;
 
-    price = Number(priceInput.value);
-    qty   = Number(quantityIput.value);
-    //vat   = Number(vatInput.value);
+    unit = Number(unitInput.value);
+    days = Number(daysInput.value);
+    vat  = 13.5;
 
-    subTotal = price * qty;
+    subTotal = unit * days;
 
     total = subTotal + (subTotal * vat) / 100;
+	
+	subCostInput.textContent = subTotal.toFixed(2);
     
-    finalCostInput.textContent = total.toFixed(2)
+    finalCostInput.textContent = total.toFixed(2);
 
     let msg = showMessage(total);
 
@@ -52,27 +53,17 @@ function showMessage(cost) {
 }
 
 
-function reset() {
-    priceInput.value = ""
-    quantityIput.value = ""
-    vatInput.value = ""
-    finalCostInput.textContent = "_____________________"
-    message.textContent = ""
-}
-
-
 
 
 function handleEvent() {
-    if(Number(priceInput.value) && Number(quantityIput.value) && Number(vatInput.value)) {
+    if(Number(unitInput.value) && Number(daysInput.value)) {
         calculateTotalCost()
     } else {
         alert('Give some valid inputs first and try again!');
-        reset()
+        //reset()
     }
 
 }
 
 
 successButton.addEventListener('click', handleEvent);
-resetButton.addEventListener('click', reset)
