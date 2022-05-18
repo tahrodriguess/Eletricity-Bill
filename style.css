@@ -29,21 +29,22 @@ main {
 }
 
 /*head title*/
-#app-title {
-    
+#app-title {  
      
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    margin-bottom: 0;    
+    margin-bottom: 10px;  
+    margin-left: 40px;  
 }
-
-
-#app-title p{
+.top p{
     position: absolute;
-    bottom:50%;
     size: 20px;
     text-align: left;
-    margin: 0;
+    margin-left: 40px;
+}
+
+.bi-lightning-charge-fill{
+    color: coral;
 }
 
 /*input*/
@@ -101,8 +102,6 @@ hr {
 /*total*/
 .result-section {
     position: absolute;
-    right: 350px;
-    width: 350px;
     font-size: 15px;
 }
 
@@ -110,12 +109,10 @@ hr {
     font-weight: bold;
 }
 
-.student-info{
+#student-info{
     font-size: 12px;
     color: gray;;
     position: absolute;
-    bottom: 90px;
-    left: 400px;
     border-color: black;
     border-radius: 2px;
 }
