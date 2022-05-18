@@ -1,7 +1,7 @@
 body{
     height: auto;
     width: auto;
-    margin: unset !important;
+    margin: unset;
 }
 body * {
     font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif, cursive;
@@ -10,7 +10,7 @@ body * {
 
 .container {
     margin-top: 5%;   
-    padding: 20px 200px 200px;
+    padding: 20px 200px;
     border-radius: 5px;
     width: 50%;    
     background-color: white;
@@ -27,51 +27,41 @@ main {
     justify-content: center;
     background-color: white;
 }
-
+.row {
+    margin:15px;
+}
 /*head title*/
-#app-title {  
-     
+#app-title {       
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    margin-top: 10px;
     margin-bottom: 10px;  
     margin-left: 40px;  
 }
-.top p{
-    position: absolute;
+
+#top p{
     size: 20px;
     text-align: left;
     margin-left: 40px;
 }
 
 .bi-lightning-charge-fill{
+    margin-top: 25px;
     color: coral;
 }
 
 /*input*/
-
-#unit-input {
-    position: bottom;
-}
-
-input.input-item {
+.unit-section {
+    margin-left: 20px;
     padding: 10px;
-    border: 1px solid;
-    border-radius: 1px;
-    border-color: #4444442e;
-}
-.text-left {
-    text-align: left;
-}
-.text-center {
-    text-align: center;
 }
 
-
+.bp-section{
+    margin-left: 20px;
+    padding: 10px;
+}
 /*button*/
-.btn-section {
-    position: static;
-    margin: auto;
-}
+
 .btn-btn {
     background-color:coral;
     font-weight:700;
@@ -79,9 +69,8 @@ input.input-item {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 30%;
-    border: unset;
-
+    width: 20%; 
+    margin: 10px 10px;   
 }
 
 .btn-btn:hover{
@@ -100,21 +89,15 @@ hr {
 }
 
 /*total*/
-.result-section {
-    position: absolute;
+#result-section {   
     font-size: 15px;
-}
-
-.total{
-    font-weight: bold;
+    margin-right: 10px;
 }
 
 #student-info{
     font-size: 12px;
-    color: gray;;
-    position: absolute;
-    border-color: black;
-    border-radius: 2px;
+    color: gray;
+    margin-left: 40px;
 }
 
 
