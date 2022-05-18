@@ -17,13 +17,15 @@ const message = document.getElementById('cost_text')
 
 function calculateTotalCost() {
 
-    let unit, days, vat, subTotal, total;
+    let unit, days, unitcost, daycost, vat, subTotal, total;
 
     unit = Number(unitInput.value);
     days = Number(daysInput.value);
+	unitcost = 0.2;
+	daycost = 0.04;
     vat  = 13.5;
 
-    subTotal = unit * days;
+    subTotal = unit * unitcost + days * daycost;
 
     total = subTotal + (subTotal * vat) / 100;
 	
