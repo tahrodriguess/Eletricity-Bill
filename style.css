@@ -8,8 +8,7 @@ body * {
     
 }
 
-.container {
-    margin-top: 5%;   
+.container {  
     padding: 20px 200px;
     border-radius: 5px;
     width: 50%;    
@@ -18,7 +17,7 @@ body * {
 }
 
 main {
-    max-width: 40%;
+    max-width: 70%;
     margin: auto;
     padding: 10px;
     display: flex;
