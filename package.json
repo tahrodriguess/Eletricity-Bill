@@ -13,6 +13,7 @@
   "electron": "^5.0.5"
  },
  "dependencies": {
-  "amplitudejs": "^4.1.0"
+  "amplitudejs": "^4.1.0",
+  "electron-builder": "^5.0.3"
  }
 }
