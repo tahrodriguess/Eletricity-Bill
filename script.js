@@ -16,9 +16,6 @@ const finalCostInput = document.getElementById('dynamic_total_cost');
 const message = document.getElementById('cost_text')
 
 
-
-
-
 calcButton.addEventListener('click', handleEvent);
 
 function handleEvent() {

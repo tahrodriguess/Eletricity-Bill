@@ -1,84 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Bill Ireland</title>
-    <link rel="stylesheet" href="style2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electric Bill Ireland</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+
+                <!--headline-->
+                <div class="row">
+                    <div class="col" id="top">
+                        <h1 id="app-title">Electric Bill Ireland</h1>
+                        <p> Calculate your own eletricity</p>
+                    </div>
+                    <div class="col" id="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                            class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+                        </svg>
+                    </div>
+                </div>
+
+
+                <!--form-->
+                <div class="row">
+                    <div class="col" id="main">
+                        <form action="" id="eletricity-cal-form">
+                            <div class="unit-section">
+                                <label for="unit-input" id="ulabel">Number of Units</label>
+                                <input type="number" class="form-control" name="ulabel" id="unit-input"
+                                    placeholder="Insert number" min="0" required>
+                            </div>
+
+                            <div class="bp-section">
+                                <label for="bp-input" id="bplabel">Billing Period</label>
+                                <input type="number" class="form-control" name="bplabel" id="bp-input"
+                                    placeholder="Insert number of days" required>
+                            </div>
+
+                            <div id="btn-section">
+                                <button class="btn-btn position-relative top-50 start-50 translate-left-y"
+                                    id="btn-calculate" type="submit">Calculate</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr style="width:100%;text-align:left;margin-left:0">
+
+                <!--total-->
+                <div class="row">
+
+                    <!--student names-->
+                    <div class="col-sm-5" id="student-info">
+                        <p>Tamiris Rodrigues Duarte (2020294)</p>
+                        <p>Thiago de Oliveira da Costa (2020005)</p>
+                    </div>
+
+                    <div class="col-md-5" id="result-section">
+                        <p>Subtotal: €<span id="dynamic_sub_cost">___</span></p>
+                        <p> VAT (13.5%)</p>
+
+                        <hr style="width:50%;text-align:left;margin-left:0">
+
+                        <p><strong>Total:</strong> €<span id="dynamic_total_cost">___</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script src="script.js"></script>
     
-</head>
-
-<body>
-    <main>
-        <div class="container">
-
-            <!--headline-->
-            <div class="row">
-                <div class="col" id="top">
-                    <h1 id="app-title">Electric Bill Ireland</h1>
-                    <p> Calculate your own eletricity</p>
-                </div>
-                <div class="col" id="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
-                        class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
-                    </svg>
-                </div>
-            </div>
-
-
-            <!--form-->
-            <div class="row">
-                <div class="col" id="main">
-                    <form action="" id="eletricity-cal-form">
-                        <div class="unit-section">
-                            <label for="unit-input" id="ulabel">Number of Units</label>
-                            <input type="number" class="form-control" name="ulabel" id="unit-input"
-                                placeholder="Insert number" min="0" required>
-                        </div>
-
-                        <div class="bp-section">
-                            <label for="bp-input" id="bplabel">Billing Period</label>
-                            <input type="number" class="form-control" name="bplabel" id="bp-input"
-                                placeholder="Insert number of days" required>
-                        </div>
-
-                        <div id="btn-section">
-                            <button class="btn-btn position-relative top-50 start-50 translate-left-y"
-                                id="btn-calculate" type="submit">Calculate</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <hr style="width:100%;text-align:left;margin-left:0">
-
-            <!--total-->
-            <div class="row">
-
-                <!--student names-->
-                <div class="col-sm-5" id="student-info">
-                    <p>Tamiris Rodrigues Duarte (2020294)</p>
-                    <p>Thiago de Oliveira da Costa (2020005)</p>
-                </div>
-
-                <div class="col-md-5" id="result-section">
-                    <p>Subtotal: €<span id="dynamic_sub_cost">___</span></p>
-                    <p> VAT (13.5%)</p>
-
-                    <hr style="width:50%;text-align:left;margin-left:0">
-
-                    <p><strong>Total:</strong> €<span id="dynamic_total_cost">___</span></p>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
-<script src="script2.js"></script>
-
 </html>
