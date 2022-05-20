@@ -16,6 +16,11 @@ const finalCostInput = document.getElementById('dynamic_total_cost');
 const message = document.getElementById('cost_text')
 
 
+
+
+
+calcButton.addEventListener('click', handleEvent);
+
 function handleEvent() {
     if(Number(unitInput.value) && Number(daysInput.value)) {
         calculateTotalCost()
@@ -25,11 +30,6 @@ function handleEvent() {
     }
 
 }
-
-
-calcButton.addEventListener('click', handleEvent);
-
-
 function calculateTotalCost() {
 
     let unit, days, unitcost, daycost, vat, subTotal, total;
