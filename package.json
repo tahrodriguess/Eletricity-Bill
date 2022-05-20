@@ -4,15 +4,15 @@
  "description": "",
  "main": "main.js",
  "scripts": {
- "start": "electron ."
+  "start": "electron ."
  },
  "keywords": [],
  "author": "Tamiris 2020294 and Thiago 2020005",
  "license": "ISC",
  "devDependencies": {
- "electron": "^5.0.5"
+  "electron": "^5.0.5"
  },
  "dependencies": {
- "amplitudejs": "^4.1.0"
+  "amplitudejs": "^4.1.0"
  }
 }
